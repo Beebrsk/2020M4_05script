@@ -1,6 +1,18 @@
-<script try = "text/javascript">
-    alert("Welcome to Our Site");
-</script>    
-var newText = 'new Text'
-document.getElementById('Bee').innerHTML=newText
-alert("Hello! I am an alert box!!");
+document.getElementById('ok').addEventListener('click',function(e)
+{
+    alert('ok ')
+    console.log(e)
+}
+)
+document.getElementById('cancel').addEventListener('click',function(e)
+{
+    alert('cancel ')
+    console.log(e)
+}
+)
+document.getElementById('no').addEventListener('click',function(e)
+{
+    alert('no ')
+    console.log(e)
+}
+)
