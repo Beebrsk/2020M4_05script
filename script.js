@@ -4,12 +4,10 @@ document.getElementById('ok').addEventListener('click',function(e)
     console.log(e)
 }
 )
-document.getElementById('cancel').addEventListener('click',function(e)
+document.getElementById('cancel').addEventListener('mousemove',(event)=>
 {
-    alert('cancel ')
-    console.log(e)
-}
-)
+    console.log(`Mouse X: ${event.clientX}, Mouse Y: ${event.clientY}`);
+});
 document.getElementById('no').addEventListener('click',function(e)
 {
     alert('no ')
